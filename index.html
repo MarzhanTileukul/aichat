@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat</title>
+  <!-- қаріптер мен белгіше сілтемелері -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <!-- Тақырыбы  -->
+    <h1 class="title">Жасанды интеллект қолданбасы</h1>
+    <p class="subtitle">Мен сіздің сабағыңызға көмектесе аламын</p>
+
+    <!-- Ұсыныстар тізімі -->
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">Жасанды интеллектті қолданып ойын түрінде оқыту жолдары.</h4>
+        <span class="icon material-symbols-rounded">draw</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Көпшілік алдында сөйлеу дағдыларын жетілдіруге арналған ең жақсы кеңестер қандай?</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Жасанды инттелект бойынша соңғы танымал жобаларды көресете аласызба?</h4>
+        <span class="icon material-symbols-rounded">explore</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Веб жоба әзірлеудің соңғы танымал тиімді жолдарын көрсете аласызба?</h4>
+        <span class="icon material-symbols-rounded">code</span>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Чат Тізімі / Контейнер -->
+  <div class="chat-list"></div>
+
+  <!-- Теру Аймағы -->
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="сұранысты енгізіп Enter басыңыз" class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      Жасанды интеллект қолданбаңыз қателесуі мүмкін, сондықтан оның жауаптарын тексеру керек.
+    </p>
+  </div>
+  <!-- Javascript құжатына сілтеме  -->
+  <script src="script.js"></script>
+</body>
+</html>
